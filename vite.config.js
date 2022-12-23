@@ -5,7 +5,7 @@ import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 
-const mainStyle = normalizePath(path.resolve('./src/styles/main.scss'));
+const indexStyle = normalizePath(path.resolve('./src/styles/index.scss'));
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -21,7 +21,7 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       scss: {
-        additionalData: `@import "${mainStyle}";`
+        additionalData: `@import "${indexStyle}";`
       }
     }
   }

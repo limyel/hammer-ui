@@ -1,7 +1,9 @@
 <template>
-  <el-button type="primary">hello</el-button>
+  <router-view/>
 </template>
 
 <style lang="scss">
-#app{}
+#app {
+  height: 100%;
+}
 </style>
