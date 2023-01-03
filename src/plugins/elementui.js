@@ -1,4 +1,4 @@
-import {ElButton, ElForm, ElFormItem, ElIcon, ElInput} from "element-plus";
+import {ElButton, ElCol, ElForm, ElFormItem, ElIcon, ElInput, ElRow} from "element-plus";
 
 export default (app) => {
     app.use(ElButton);
@@ -6,4 +6,6 @@ export default (app) => {
     app.use(ElFormItem);
     app.use(ElIcon);
     app.use(ElInput);
+    app.use(ElRow);
+    app.use(ElCol);
 }
