@@ -16,7 +16,7 @@
         <el-form-item label="验证码" prop="captcha">
           <el-row :gutter="10" style="width: 100%">
             <el-col :span="18">
-              <el-input type="text" autocomplete="off"></el-input>
+              <el-input type="text" v-model="loginForm.captcha" autocomplete="off"></el-input>
             </el-col>
             <el-col :span="6">
               <img class="captcha" src="https://bpic.588ku.com/element_origin_min_pic/01/37/32/26573c46f211bc8.jpg" alt="captcha"/>
@@ -37,7 +37,8 @@ import {ref} from "vue";
 
 const loginForm = ref({
   username: '',
-  password: ''
+  password: '',
+  captcha: ''
 })
 const loginRules = ref({
   username: [
@@ -68,6 +69,8 @@ const loginFormRef = ref(null)
 
 
 const checked = ref(true);
+
+const submitForm = ()
 
 </script>
 
